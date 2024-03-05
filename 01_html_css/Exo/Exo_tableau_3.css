@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    padding: none;
+    margin: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    border: solid 1px;
+}
+
+/******** Style pour le header ********/
+header {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+header div {
+    width: 33%;
+    padding: 15px;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav a {
+    margin: 0 50px;
+}
+
+header div:first-child {
+    background-color: #5F9EA0;
+}
+
+header div:nth-child(2) {
+    background-color: #008B8B;
+}
+
+header div:nth-child(3) {
+    background-color: #00CED1;
+}
+
+header nav:last-child {
+    background-color: #FFEBCD;
+    padding: 25px;
+}
+
+/******** Style pour le main ********/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main #section1:first-child

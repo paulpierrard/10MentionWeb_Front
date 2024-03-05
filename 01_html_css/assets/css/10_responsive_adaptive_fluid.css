@@ -1,0 +1,242 @@
+/* *********************************************RESET et NORMALIZE**************************************************** */
+/* 
+    Une page HTML standard sans style déclaré bénéficiera néanmoins d'un ensemble de styles automatiquement appliqués par le navigateur, permettant ainsi de distinguer les différents éléments. 
+    Afin d'initialiser ces valeurs, on a la possibilité de les annuler dans le CSS en sélectionnant chaque élément et en modifiant ses propriétés.
+    Une autre approche consiste à utiliser le reset CSS : https://meyerweb.com/eric/tools/css/reset/
+    ou le mini reset : https://jgthms.com/minireset.css/
+
+*/
+
+/* @import url(reset.css); */
+
+
+/* 
+    Le problème de cette technique, c'est qu'elle annule certains styles par défaut des navigateurs qui sont réellement utiles  et cela  nécessite plus de travail pour rétablir certains styles de base qui ont été écrasés par le reset.
+*/
+
+
+/*  
+    Normalize.css est une bibliothèque CSS qui vise à rendre les styles des navigateurs plus cohérents et prévisibles en normalisant les styles par défaut des éléments HTML il conserve certains styles par défaut qui sont considérés comme bénéfiques et utiles, tout en corrigeant et en uniformisant d'autres styles pour assurer une cohérence entre les navigateurs.
+    https://necolas.github.io/normalize.css/
+ */
+ 
+ 
+ /* *************************  Responsive Web Designe  ********************************** */
+ /* 
+    Le Responsive Web Design englobe les techniques de conception de contenus internet qui permettent de proposer des contenus auto-adaptables en fonction des interfaces de consultation utilisées par le visiteur
+
+    Dans le cadre du Responsive Web Design, on parle de deux caractéristiques imprtantes: 
+
+    - L'ajustement automatique de la taille des éléments :  une page web, un élément HTML ou une image peut ainsi se redimensionner en fonction de la taille d'écran du terminal utiloisé (ordinateur, tablette, smartphone, etc...)
+    -L'adaptation de l'agencement des  éléments: l'organisation du contenu peut être également automatiquement adapteé
+
+    
+    Le Responsive Web Design est aujourd'hui un incontournable dans le monde du développement web.
+*/
+*{
+    box-sizing: border-box;
+}
+:root {
+
+    font-size: 62.5%;
+}
+
+body {
+
+    font-weight:bold;
+
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 { 
+    text-align: center;
+    margin: 50px 0;
+    font-size: 3rem;
+    color: #D04848;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.responsive :nth-child(2) {
+    background: color #ffc0d9; ;
+}
+
+
+.responsive :nth-child(3) {
+    background-color: #D63484;
+}
+
+
+.responsive :nth-child(4) {
+    background-color:#FF90BC ;
+}
+
+.responsive {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.responsive h2 {
+    width: 100%;
+}
+
+.responsive div {
+    width: 33.33%;
+    line-height: 100px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+
+    .responsive :nth-child(2), :nth-child(3) {
+
+        width: 50%;
+    }
+
+    .responsive :nth-child(4){
+        width: 100%;
+    }
+    
+}
+@media screen and (min-width:768px) {
+
+    .responsive div {
+
+        width: 100%;
+    }
+}
+
+/* **************************** Site adaptatif ************************************ */
+
+/* Grâce au design adaptatif, l'utilisateur peut consulter le même site web avec un confort visuel équivalent, sans avoir à zoomer, défiler horizontalement, ou effectuer d'autres manipulations susceptibles de dégrader l'expérience utilisateur. C'est précisément pour cette raison que cette technique offre de très bonnes performances. */
+
+
+.adaptative {
+
+    border: 2px solid black;
+    height: 100%;
+    padding: 1.5rem;
+    margin-bottom: 50px;
+}
+
+
+@media screen and (max-width:991.99px) {
+
+    .adaptative h2{
+
+        font-size: 1.5rem;
+
+    }
+    .adaptative p{
+
+        font-size: 1.3rem;
+    
+    }
+
+
+}
+
+@media screen and (min-width:992px) and (max-width:1199.99px) {
+
+    .adaptative h2{
+
+        font-size: 2rem;
+
+    }
+    .adaptative p{
+
+        font-size: 1.8rem;
+    
+    }
+
+
+}
+
+@media screen and (min-width:1200px) {
+
+    .adaptative h2{
+
+        font-size: 2.5rem;
+
+    }
+    .adaptative p{
+
+        font-size: 2rem;
+    
+    }
+
+
+}
+
+
+/* **************************** Design fluide ************************************ */
+/* 
+    Le design fluide est une technique où le site s'adapte automatiquement à la résolution de l'utilisateur. Pour cela, il suffit que tous vos blocs et éléments soient dimensionnés en unités fluides.
+*/
+
+
+
+
+
+.fluid {
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 60px;
+    padding: 30px;
+    justify-content: center;
+}
+
+.fluid h2 {
+    width: 100%;
+
+}
+
+.fluid div:nth-child(2) {
+    background-color: #f1b4bb;
+    padding: 20px;
+    width: 60%;
+
+    
+
+}
+
+
+.fluid div:nth-child(3) {
+    background-color: #facbea;
+    padding: 20px;
+    width: 40%;
+
+}
+
+@media screen and (max-width:626px) {
+
+    .fluid img, .fluid div{
+        width: 100%!important;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

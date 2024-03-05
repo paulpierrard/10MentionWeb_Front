@@ -1,0 +1,97 @@
+/* Feuille de style pour la page: balises de mise en page */
+body {
+    background-color: #EEEDEB;
+}
+
+div.navigation {
+    border: solid 2px #3c0753;
+    text-align: center;
+    padding: 20px;
+}
+
+#h1 {
+    text-transform: uppercase;
+    color: #3c0753;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    
+}
+
+#conteneurB {
+    display: flex; 
+}
+
+.navigation a {
+    background-color: #d9a9db;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 33%;
+    padding: 5px 0px;
+    border-radius: 8px;
+}
+
+.navigation a:hover {
+    background-color: #3c0753;
+}
+
+div.main {
+    border: solid 2px #3c0753;
+    padding: 20px 50px;
+    margin-top: 10px;
+}
+
+div.section1, div.section2{
+    text-align: center;
+}
+
+div.section1 img {
+    border-radius: 20px;
+}
+
+div.section2 {
+    background-image: url(../img/ligne_de_code.jpg);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+div.section2 p {
+    display: inline-block;
+    border: solid 2px blue;
+    width: 33%;
+    padding: 20px;
+    background-color: black;
+    text-align: left;
+}
+
+div.piedepage {
+    border: solid 2px #3c0753;
+    text-align: center;
+
+}
+
+
+div.piedepage ul{
+    display: inline-block;
+    width: 33%;
+    list-style: none;
+
+}
+
+div.piedepage ul li{
+    margin-bottom: 20px;
+
+}
+
+div.piedepage ul li a{
+    color: #3c0753;
+    background-color: pink;
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+}
