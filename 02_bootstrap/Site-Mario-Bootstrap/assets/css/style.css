@@ -7,4 +7,7 @@ main {
 img{
     width: 100%;
 }
-
+table[class*=col-lg-6] { /* est un element CSS qui cible tout les elements qui contienne col-lg-6 */
+	width: 50%;
+}
+/*  */
