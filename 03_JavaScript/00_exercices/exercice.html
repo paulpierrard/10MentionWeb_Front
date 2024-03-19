@@ -31,9 +31,123 @@
         // Rappel : en informatique, la virgule s'écrit avec un point.
         // INDICE : // [°F] = [°C] x 9/5 + 32.
 
-            let exo3 = prompt("temperature");
-            alert(exo3*9/5 + 32 + "°F");
+            // let exo3 = prompt("temperature");
+            // alert(exo3*9/5 + 32 + "°F");
+
+        // a=10; / b = 5 / c = 2 // A>B --> a st bien supérieur à b// sinon -->a st inférieur à b
+        // a>b et b>c // ok pour les deux conditions sinon une de ces deux conditions est fausse 
+        //(a à 9) ou b<9--> ok porur au moin l'une de ces conditions les deux conditions sont fausse
+
+        //     let a = 10;
+        //     let b = 5;
+        //     let c = 2;
+        //     let br = "<br>"
+             
+        //     if (a > b) {
+        //         document.write("a st bien supérieur à b")
+        //     } else {
+        //         document.write("a st inférieur à b")
+        //     }
+
+        // //-----------------------------------
+        //     document.write(br);
+
+        //     if (a > b && b > c) {
+
+        //         document.write( " ok pour les deux conditions " )
+                
+        //     } else {
+        //         document.write( " une de ces deux conditions est fausse " )
+        //     }
+
+
+        // //--------------------------------------
+
+        //     document.write(br);
+
+        //     if (a === 9 || b < 9) {
+
+        //         document.write( "ok porur au moin l'une de ces conditions" )
+                
+        //     } else {
+
+        //         document.write( "les deux conditions sont fausse" )
+                
+        //     }
+
+        // J'arrive sur un Espace sécurisé au moyen du prénom et de l'âge.
+        // Je dois saisir mon prénom et mon age pour être authentifié sur le site (ces informations seront au préalable stocké dans des variables prenom et age).
+        //  En cas d'echec, une alerte m'informe du problème.
+        //  Si tout se passe bien, un message de bienvenue m'accueille.
+
+            // let age = prompt('insere votre age)');// je récupére l'age de l'utilisateur
+            // let prenom = prompt('veuillez saisir votre prénom');// je récupére le prenom de l'utilisateur 
+            // if (prenom == "semir" && age == 40) {
+
+            //     alert("bienvenue semir");
+                
+            // } else {
+
+            //     alert("qui êtes vous");
+                
+            // }
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+                //exo 
+                // Exercice 5
+                /*
+                    Déclarer deux tableaux :
+                        tab1 qui contient 5 nom
+                        tab2 qui contient 5 prenoms
+                        tab3 qui contient les âges 
+                    Afficher en utilisant une boucle les nom et prénoms associés dans un document write 
+
+                */
+
+                // let tab1 = ["Pierrard ", "Sarajlic ", "Cissoko ", "Isaac ", "Pottier "];
+                // let tab2 = ["Paul ", "Sémir ", "Adama ", "Marc ", "Fabien "];
+                // let tab3 = [21, 38, 30, 25, 28];
+
+                // for (p=0;p<5;p++)
+                // {
+                //     document.write(tab1[p]+tab2[p]+tab3[p]);
+                // }                        
+                
+                // Exercice 6
+
+                /*
+                     Ecriver un programme pour qu'il fasse 10 tours de manège en affichant le numéro du tour à chaque tour dans la console :
+                     En utilisant le boucle for
+
+
+                     Le manège démarre
+                     C'est le tour numéro 1
+                    C'est le tour numéro 2
+                    ...
+                     C'est le tour numéro 10
+                    Le manège s'arrête
+                */
             
+
+                    for (t=0 ; t <= 10 ; t++) {
+
+                        if (t = 0) {
+                        document.write("depart"+ "<br>")
+                    } else if (t < 5) {
+                        document.write("C'est le tour n°" + t + "<br>")
+                    }else{
+                        document.write("fin" +"<br>")
+
+                    }
+                    }
+
+                   
+
+        
+
+
+
 
 
 
