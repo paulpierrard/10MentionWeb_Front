@@ -91,7 +91,7 @@
             //     alert("qui êtes vous");
                 
             // }
-//------------------------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------
 
 
                 //exo 
@@ -109,10 +109,22 @@
                 // let tab2 = ["Paul ", "Sémir ", "Adama ", "Marc ", "Fabien "];
                 // let tab3 = [21, 38, 30, 25, 28];
 
-                // for (p=0;p<5;p++)
-                // {
-                //     document.write(tab1[p]+tab2[p]+tab3[p]);
-                // }                        
+                // // for (p = 0 ; p < 5 ; p++) {
+
+                // //     document.write(`${tab1[p]} ${tab2[p]} ${tab3[p]}<br>`);
+
+                // // }                        
+
+                // let tab4 = [tab1, tab2, tab3];
+
+                // for (let k = 0; k < tab4[0].length; k++) {
+
+                //     document.write(`${tab4[0][k]} ${tab4[1][k]} ${tab4[2][k]}<br>`)
+                    
+                // }
+
+
+
                 
                 // Exercice 6
 
@@ -130,25 +142,171 @@
                 */
             
 
-                    for (t=0 ; t <= 10 ; t++) {
+                    // for (let t = 0 ; t <= 11 ; t++) {
 
-                        if (t = 0) {
-                        document.write("depart"+ "<br>")
-                    } else if (t < 5) {
-                        document.write("C'est le tour n°" + t + "<br>")
-                    }else{
-                        document.write("fin" +"<br>")
+                    //     if (t === 11) {
 
-                    }
-                    }
+                    //         document.write( "Le manège s'arrête" + "<br>")
+                            
+                    //     } else if (t === 0) {
 
-                   
+                    //         document.write( "Le manège démarre" + "<br>")
+
+                    //     } else {
+
+                    //         document.write("C'est le tour n°" + t + "<br>")
+
+                    //     }
+
+
+
+                // Exercice 7
+        /* 
+            Créer un script qui permet de :
+                - récupérer la moyenne de BAC à votre utilisateur
+                - vérifier si l'utilisateur a bien renseigner un nombre, 
+                si un nombre :
+                    => si la moyenne est supérieur ou égale à 0 et strictement inférieure à 10  -> afficher "tu es recalé !"
+                    => si la moyenne est entre 10 et 11 -> afficher "Tu passes, sans mention !"
+                    => si la moyenne et entre 12 et 20 -> afficher "Reçu avec mention !" :) 
+                    => si la moyenne est inférieur à 0 ou supérieur à 20  -> afficher "La moyenne doit être comprise entre 0 et 20 ! :)"
+                Si ce n'est pas un nombre :
+                    =>afficher  "Vous n\avez pas saisi de nombre !"   
+        */
 
         
+            // let truc = prompt("affichez votre moyenne");
+                
+            // if (truc >= 0 && truc < 10) {
+
+            //     document.write( "tu es recalé !")
+                
+            // } else if (truc >= 10 && truc <= 11) {
+
+            //     document.write("Tu passes, sans mention !")
+                
+            // }else if (truc > 11 && truc <= 20) {
+
+            //     document.write( "Reçu avec mention !")
+
+            // } else if (truc < 0 || truc > 20 ) {
+
+            //     document.write("La moyenne doit être comprise entre 0 et 20 ! :)")
+
+            // }else {
+
+            //     document.write("Vous n'avez pas saisi de nombre !")
+
+            // }
+
+
+            // Exercice 8
+        /* 
+
+            Créer un script qui permet de :
+                récuperer un nombre de l'utilsateur, 
+                le nombre doit être différent de 0 et positif
+                vérifier et afficher sur la page si ce nombre ainsi que ceux qui le suivent jusqu'au 10.
+                Si ce n'est pas un nombre :
+                    => afficher  "Vous n'avez pas saisi de nombre !"  
+                si un nombre :
+                    => si un nombre pair -> affiche " le nombre est pair"
+                    => si un nombre impair -> affiche " le nombre est impair"
+
+
+            créer un script JavaScript qui demande à l'utilisateur de saisir un nombre. Le script vérifiera d'abord si le nombre est différent de zéro et s'il est positif. Ensuite, il affichera sur la page web si ce nombre est pair ou impair, ainsi que pour les neuf nombres suivants jusqu'à 10.
+            
+            
+        */
+
+            let machin = prompt("veuillez saisir votre numéro");
+
+            if (machin%1==0) {
+
+                document.write("chiffre impaire")
+
+            }else if (machin%2==0 ) {
+
+                document.write("chiffre paire")
+
+            }else if (machin > 10 ) {
+
+                document.write("c'est un nombre")
+
+            }else{
+
+                document.write("Vous avez saisi une chaine de  caractere !")
+                
+            }
 
 
 
+            //Exercice 9
 
+        // Ecrivez un programme qui fait jouer l'utilisateur au "ni oui, ni non" : il entre un texte jusqu'à saisir "oui" ou "non", ce qui déclenche la fin du jeu. ( Utilisez la boucle while)
+
+
+        //  let d = prompt("on commance")
+        
+        //  if (d == "oui" || d == "non") {
+
+        //     document.write("vous avez perdu")
+            
+        //  } else {
+
+        //     while(d != "oui" || d != "non"){
+
+        //         d=prompt("on continue")
+
+        //     }
+            
+        //  }*
+
+        // let d = prompt("on commance")
+
+        // while (d != "oui" && d != "non") {
+
+        //     d=prompt("on continue")
+
+            
+        // }
+        // document.write("<strong><h1>ahhhhh tu est mauvais</h1></strong> ")
+
+
+            
+        //Exercice 10
+
+        /* 
+            Écrivez un programme qui affiche tous les nombres entre 1 et 20 avec les exceptions suivantes :
+            il affiche "Grala" à la place du nombre si celui-ci est divisible par 3.
+            Il affiche "Bu" à la place du nombre si celui-ci est divisible par 5 et non par 3.
+            il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 5.
+        */
+            
+          
+            // for (let t = 1 ; t <= 20 ; t++) {
+
+            //     if (t % 3 == 0 && t % 5 == 0){
+
+            //         document.write("Gralabu" + "<br>")
+
+            //     } else if (t % 3 == 0) {
+
+            //         document.write("Grala" + "<br>")
+                            
+            //     } else if (t %5 == 0) {
+
+            //         document.write("Bu" + "<br>")
+
+            //     } else {
+
+            //         document.write( t + "<br>")
+
+            //     }
+            // }
+
+
+            
 
 
     </script>
