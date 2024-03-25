@@ -219,25 +219,43 @@
             
         */
 
-            let machin = prompt("veuillez saisir votre numéro");
+            // let machin = prompt("veuillez saisir votre numéro");
+            // console.log(Math.sign(machin))
 
-            if (machin%1==0) {
+            // if (isNaN(machin)) {
 
-                document.write("chiffre impaire")
+            //     document.write("Vous avez saisi une chaine de  caractere !")
 
-            }else if (machin%2==0 ) {
+            // } else {
 
-                document.write("chiffre paire")
+            //     if (Math.sign(machin) == -1 || Math.sign(machin) == 0) {
 
-            }else if (machin > 10 ) {
+            //         document.write("le nombre doit être différent de 0 et positif")
+                    
+            //     } else {
 
-                document.write("c'est un nombre")
+            //         while (machin <= 10) {
 
-            }else{
+            //             if (machin % 2 == 0) {
 
-                document.write("Vous avez saisi une chaine de  caractere !")
-                
-            }
+            //                 document.write(" le nombre "+ machin +" est pair <br>")
+
+            //             } else {
+
+            //                 document.write(" le nombre "+ machin +" est impair <br>")
+                            
+            //             }
+
+            //             machin++
+                    
+            //         }
+
+                    
+            //     }
+
+
+
+            // }
 
 
 
@@ -246,27 +264,12 @@
         // Ecrivez un programme qui fait jouer l'utilisateur au "ni oui, ni non" : il entre un texte jusqu'à saisir "oui" ou "non", ce qui déclenche la fin du jeu. ( Utilisez la boucle while)
 
 
-        //  let d = prompt("on commance")
-        
-        //  if (d == "oui" || d == "non") {
-
-        //     document.write("vous avez perdu")
-            
-        //  } else {
-
-        //     while(d != "oui" || d != "non"){
-
-        //         d=prompt("on continue")
-
-        //     }
-            
-        //  }*
-
-        // let d = prompt("on commance")
+        // let d = ''
 
         // while (d != "oui" && d != "non") {
 
         //     d=prompt("on continue")
+
 
             
         // }
@@ -284,26 +287,26 @@
         */
             
           
-            // for (let t = 1 ; t <= 20 ; t++) {
+            for (let t = 1 ; t <= 20 ; t++) {
 
-            //     if (t % 3 == 0 && t % 5 == 0){
+                if (t % 3 == 0 && t % 5 == 0){
 
-            //         document.write("Gralabu" + "<br>")
+                    document.write("Gralabu" + "<br>")
 
-            //     } else if (t % 3 == 0) {
+                } else if (t % 3 == 0) {
 
-            //         document.write("Grala" + "<br>")
+                    document.write("Grala" + "<br>")
                             
-            //     } else if (t %5 == 0) {
+                } else if (t %5 == 0) {
 
-            //         document.write("Bu" + "<br>")
+                    document.write("Bu" + "<br>")
 
-            //     } else {
+                } else {
 
-            //         document.write( t + "<br>")
+                    document.write( t + "<br>")
 
-            //     }
-            // }
+                }
+            }
 
 
             
