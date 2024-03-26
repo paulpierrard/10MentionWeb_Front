@@ -58,9 +58,17 @@
     // lesP[3].style.textTransform = "uppercase";
     // lesP[4].style.textTransform = "uppercase";
 
-    for (let i = 0; i < lesP.lengt; i++) {
+    // for (let i = 0; i < lesP.length; i++) {
 
-        lesP[i].style.textTransform = "uppercase";
+    //     lesP[i].style.textTransform = "uppercase";
+        
+    // }
+
+    // Boucle for of : je déclare une variable p qui représente chaque élément dans le tableau lesP, au niveau de l'instruction à exécuter j'appelle la variable p en lui attribuant le style souhaité avec la propriété style.
+
+    for ( let p of lesP) {
+
+        p.style.textTransform = "uppercase";
         
     }
     
