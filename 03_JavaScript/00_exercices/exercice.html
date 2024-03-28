@@ -317,21 +317,65 @@
             x fois, par rapport au 2eme nombre
             Exemple: pousser(8, 5) => [8, 8, 8, 8, 8]
         */
+
+        //Exercice 11
+        /*
+            Créez un array vide = []
+            Puis créez une fonction qui prendra 2 paramètres: 2 nombres
+            Le seul but de la fonction sera de pousser le premier nombre à la suite de l'array
+            x fois, par rapport au 2eme nombre
+            Exemple: pousser(8, 5) => [8, 8, 8, 8, 8]
+        */
+
+        
+            //......................................
+            // document.write("<br>")
+            // let tableau = [];
+
+            // let nombres = parseFloat(prompt("Entrez un nombre A ?"));
+            // let fois = parseFloat(prompt("Entrez un nombre B ?"));
+
+            // function pousser(nombres, fois) {
+            // for (let i = 0; i < fois; i++) {
+            // tableau.push(nombres);
+            // }
+            // document.write("tableau :" + tableau + "<br>")
+            // tableau = [];
+            
+            // };
+            // pousser(nombres, fois);
+            // pousser(5, 4);
+            // console.table(tableau);
+
+            // let maFonction = (nbr1, nbr2) => {
+            //     let table = [];
+            //     for (let i = 0; i < nbr2; i++){
+            //         table.push(nbr1);
+            //     }
+            //     document.write('myArray = [' + table + '] <br>')
+            // }
+            // maFonction(10,20);
+            // maFonction(9,7);
        
-            let tab1 = [];
-            let nbr
+            // let tab1 = [];
+            // let nbr
 
-            function leTableau(tab1) {
+            // function leTableau(tab1) {
 
-                for (let index = 0; index < array.length; index++) {
-                    const element = array[index];
+            //     for (let index = 0; index < array.length; index++) {
+            //         const element = array[index];
                     
-                }
+            //     }
                 
-            }
-            leTableau(5 , 3);
+            // }
+            // leTableau(5 , 3);
 
-            document.write(tab1);
+            // document.write(tab1);
+
+            
+
+
+            
 
             //Exercice 12
 
@@ -340,15 +384,41 @@
 
             Créez une fonction qui permet de calculer la somme des nombres, de manière automatique
         */
+       
 
-            let tab2 = [1,2];
+        // let tab = [50, 7, 20, 60, 10];
 
-            function lesTableaux(tab2){
+        // let sommeTableau = ()=> {
 
-                let reponce = tab2[0] + tab2[1];
+        //     let somme = 0;
+        //     for (let i = 0; i < tab.length; i++) {
 
-            }
-            lesTableaux(tab2);
+        //         somme += tab[i];
+                
+        //     }
+
+        //     document.write(somme + "<br>")
+
+        // }
+        // sommeTableau();
+
+        //2ème façon de faire
+        // let monArray = function(nombre){
+
+        //     let k = 0;
+        //     for (let i = 0; i < nombre.length; i++) {
+
+        //         k += nombre[i];
+                
+        //     }
+
+        //     return k;// La fonction retourne une valeur : la somme des éléments dans le tableau
+
+        // }
+
+        // document.write(monArray([5 , 54 , 15 , 60]));
+
+            
             
 
 
@@ -357,23 +427,54 @@
             A l'aide de ce tableau et d'une boucle:
         */
 
-        // const clients = [
-        //     {
-        //         firstname: "Claire",
-        //         age: 28,
-        //     },
-        //     {
-        //         firstname: "Max",
-        //         age: 32,
-        //     },
-        //     {
-        //         firstname: "Léo",
-        //         age: 23,
-        //     },
-        // ];
+        let clients = [
+            {
+                firstname: "Claire",
+                age: 28,
+            },
+            {
+                firstname: "Max",
+                age: 32,
+            },
+            {
+                firstname: "Léo",
+                age: 23,
+            },
+        ];
 
         // Calculez et affichez dans le terminal la somme des âges.
 
+            let totalAge = 0;
+
+            // for (let client of clients) {
+
+            //     totalAge += client.age
+                
+            // }
+
+            // document.write(`la somme des âge ${totalAge}`);
+
+        // 2ème facon de faire : boucle for
+
+        // for (let i = 0; i < clients.length; i++) {
+
+        //     totalAge += clients[i].age;
+            
+        // }
+        // document.write(totalAge);
+
+        //3ème facon
+
+        // let index = 0;
+
+        // while (index < clients.length) {
+
+        //     totalAge += clients[index].age;
+
+        //     index++
+            
+        // }
+        // document.write(totalAge);
 
         // Exercice 14
 
@@ -382,6 +483,58 @@
             ex: testEmail('julien@gmail.com') => true
             ex: testEmail('julien.gmail.com') => false
         */
+
+        let mail = prompt("votre adresss mail");
+
+        // function verifEmail() {
+              
+        //     let i = 0 
+        //     let j;
+
+        //     while (i < mail.length) {
+
+        //         if (mail[i] == "@") {
+
+        //             j = mail[i] ;
+                    
+        //         }
+
+        //         i++;
+                       
+        //     }
+        //     if (j == "@") {
+
+        //         document.write("true");
+                
+        //     } else {
+
+        //         document.write("true");
+                
+        //     }
+            
+        // }
+
+        // verifEmail(mail);
+
+        // avec la fonction indexOf()
+
+        function verif(mail) {
+
+            let index = mail.indexOf('@');
+
+            if (index == -1) {
+
+                document.write('false')
+                
+            } else {
+
+                document.write('true')
+                
+            }
+
+            
+        }
+        verif(mail)
 
 
             
