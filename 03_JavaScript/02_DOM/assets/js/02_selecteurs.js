@@ -174,35 +174,26 @@
     console.log(valeurA);
 
 
-    // Grâce à votre script, créez une balise a dans la balise h1 avec le lien vers la documentation JS () qui s'affiche sur un nouvel onglet.
+// Grâce à votre script, créez une balise a dans la balise h1 avec le lien vers la documentation JS () qui s'affiche sur un nouvel onglet.
 // Ce lien sera de couleur blanche et non souligné
 
-// title = document.querySelector('a');
 
-// title.setAttribute("href");
+    // elem.setAttribute("href", "https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String/link");
+    // elem.setAttribute('target', '_blank');
+
+    // elem.style.color = "white";
+    // elem.style.textDecoration = "none";
+    // elem.innerText = "Documentation JS";
+    // contener.append(elem);
+    // console.log(elem);
 
 
 
-
-
-
-
-
-
+    titre. innerHTML = "<a href = 'https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String/link' target= '_blank' >Cours JavaSript</a>";
+    let elem = document.querySelector('h1 a');
+    elem.style.color = "white";
+    elem.style.textDecoration = "none";
 
     
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         
