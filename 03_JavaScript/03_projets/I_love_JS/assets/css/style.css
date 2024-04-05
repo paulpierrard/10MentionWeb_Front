@@ -16,6 +16,9 @@
     --font-general : Arial, Helvetica, sans-serif;
 }
 
+body{
+    font-size: 1.4rem;
+}
 /* barre de nav desktop */
 
 .navbar-desktop {
@@ -126,11 +129,11 @@ h1{
 }
 
 .bloc-btn {
-    width: 40%;
-    margin: 2rem auto;
+    width: 100%;
+    margin: 0 auto;
 
 }
-.bloc-btn i {
+.bloc-btn .bi:not(.bi-check) {
     font-size: 4rem;
 }
 .btn-abonner{
@@ -140,7 +143,46 @@ h1{
     border: none;
     color: #f1bf2a;
 }
+/**************** footer *****************/
 
-.abonner-vous{
 
+footer {
+    background-color: #1E2337;
+    margin: 0 !important;
+    
+}
+footer li {
+    padding: 7px;
+}
+
+footer li a{
+    color: #fff;
+    font-size: 1.3rem;
+    
+}
+/* ************************************************* */
+
+.cookies {
+    background-color: gray;
+    padding: 3rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    opacity: 1;
+    transition: .5s;
+}
+.cookies button{
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 10px;
+
+}
+.btn-success{
+    background-color: #1E2337;
+
+}
+.btn-deny{
+    background-color: blue;
 }

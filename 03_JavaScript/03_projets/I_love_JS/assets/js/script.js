@@ -62,23 +62,38 @@ smile.addEventListener('click', ()=>{
         
     }
 
+    // smile.classList.toggle('bi-emoji-wink-fill')
+
 })
+
+//------------------------------ bouton abonnez vous ------------------------------------//
 
 let abonner = document.querySelector('.btn-abonner')
 
 abonner.addEventListener('click', ()=>{
 
-    if (abonner.classList.contains("abonnez-vous")) {
+    if (abonner.innerText===("abonnez-vous")) {
 
-        abonner.classList.remove("abonnez-vous");
-        abonner.classList.add("abonée <i class='bi bi-check2'></i>");
+        abonner.innerText = "abonnez-vous";
+        abonner.innerHTML = "abonée <i class='bi bi-check2'></i>";
         
     } else {
 
-        abonner.classList.remove("abonnez-vous");
-        abonner.classList.add("abonée <i class='bi bi-check2'></i>");
+        abonner.innerText="abonnez-vous";
         
     }
 
    
+})
+
+// cookies ------------------------------------------------------------------------
+
+let btnCookies = document.querySelector(".btn-success");
+
+let cookies = document.querySelector(".cookies")
+
+btnCookies.addEventListener("click", ()=>{
+    
+    cookies.style.opacity = "0";
+    
 })
