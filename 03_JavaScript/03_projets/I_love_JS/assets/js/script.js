@@ -97,3 +97,69 @@ btnCookies.addEventListener("click", ()=>{
     cookies.style.opacity = "0";
     
 })
+
+//---------------- carrousel ----------------------------//
+
+let left = document.querySelector(".left");
+let auto = document.querySelector(".automatique");
+let right = document.querySelector(".right");
+let img = document.querySelector("img");
+let autoIcon = document.querySelector(".automatique i")
+let i = 1;
+let statut = null;
+
+right.addEventListener("click", ()=>{
+
+    i++;
+    img.setAttribute('src', `assets/img/${i}.jpg`)
+
+    if (i == 7) {
+
+        i = 1 ;
+        img.setAttribute('src', `assets/img/${i}.jpg`);
+
+        
+    } 
+})
+
+left.addEventListener("click", carrousel)
+
+    function carrousel (){
+
+    i--;
+    img.setAttribute('src', `assets/img/${i}.jpg`)
+
+    if (i == 0) {
+
+        i = 6 ;
+        img.setAttribute('src', `assets/img/${i}.jpg`);
+
+        
+    } 
+}
+
+auto.addEventListener("click", ()=>{
+
+    autoIcon.classList.toggle('bi-pause-fill');
+
+    if (statut == null) {
+
+        statut = window.setInterval(carrousel, 1500);
+        
+    } else {
+
+        window.clearInterval(statut);
+
+        statut = null;
+        
+    }
+
+})
+
+//---------------- loader ----------------------------//
+
+
+let = document.querySelector('#loader');
+window.addEventListener('load', ()=>{
+    loader.classList.add('hideloader')
+})

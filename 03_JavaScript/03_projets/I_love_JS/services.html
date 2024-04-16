@@ -30,6 +30,7 @@
 
     <body>
 
+        <div id="loader" class="d-flex justify-content-center align-items-center ">
             <div class="icon-loader"></div>
         </div>
 
@@ -52,44 +53,15 @@
 
         </header>
         <main>
-
-            <div  class="container-fluid d-flex flex-column align-items-center ">
-
-                <div class="bannier-titre">
-                    <h1 class="text-center">I love JS</h1>
-                </div>
-                <div>
-
-
-
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ci64dLXMKi4?si=av6d__rDZJvrl64R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    <div class="bloc-btn d-flex justify-content-between align-items-center  ">
-                        <i class="smil bi bi-emoji-neutral "></i>
-                        <button class="btn-abonner">abonnez-vous</button>
+            <div  class="container-fluid d-flex flex-column align-items-center text-center ">
+                <section class="mt-5 mario">
+                    <h1>Bouge mario</h1>
+                    <div>
+                        <h2>keydown</h2>
                     </div>
-
-                    </div>
-                    <div class="slider d-flex flex-column align-items-center ">
-                        <div class="outils d-flex justify-content-center">
-                            <div class="left" title="Image précédente">
-                                <i class="bi bi-skip-backward-fill "></i>
-                            </div>
-                            <div class="automatique" title="Démarrer le carrousel">
-                                <i class="bi bi-caret-right-fill"></i>   
-                            </div>
-                            <div class="right" title="Image suivante">
-                                <i class="bi bi-skip-forward-fill"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <img src="assets/img/1.jpg" alt="Image 1">
-                        </div>
-                    </div>    
-
+                    <img src="assets/img/mario.png" alt="image de mario">
+                </section>
             </div>
-
-
 
         </main>
         <footer class="d-flex pt-5">
@@ -127,19 +99,6 @@
                     <a href="#">Lien</a>
                 </li>
         </ul>
-        <div class="cookies d-flex justify-content-between align-items-center ">
-            <div class="cookies-texte">
-                <p>En poursuivant, vous acceptez l'utilisation des cookies par le site afin de vous proposer des contenus adaptés et réaliser des statistiques.</p>
-            </div>
-            <div class="cookies-btn">
-                <button class="btn-success ">
-                    Acceptez les cookies
-                </button>
-                <button class="btn-deny">
-                    Paramètrer les cookies
-                </button>
-            </div>
-        </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
@@ -156,7 +115,7 @@
 
         <!-- lien vers JS -->
 
-        <script src="assets/js/script.js"></script>
+        <script src="assets/js/services.js"></script>
         
     </body>
 </html>
