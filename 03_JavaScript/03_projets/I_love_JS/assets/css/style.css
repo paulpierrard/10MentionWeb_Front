@@ -248,4 +248,14 @@ footer li a{
     display: none !important;
 }
 
-/************************** keydown ************************/
+/************************** keyboard *************************/
+
+.mario {
+    position: relative;
+
+}
+#mario {
+    position: absolute;
+    left: 30px;
+    top: 0;
+}
