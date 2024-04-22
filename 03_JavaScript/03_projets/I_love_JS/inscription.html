@@ -28,7 +28,7 @@
 
     </head>
 
-    <body>
+    <body class="body">
 
         <div id="loader" class="d-flex justify-content-center align-items-center ">
             <div class="icon-loader"></div>
@@ -38,10 +38,9 @@
 
             <!-- navbar pour desktop -->
             <nav class="navbar-desktop d-flex justify-content-center align-items-center ">
-                <a href="#">Accueil</a>
-                <a href="#">Services</a>
-                <a href="#">A propos</a>
-                <a href="#">Contact</a>
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="inscription.html">Inscription</a>
 
                 <div class="switch">
                     <!-- icone de soleil -->
@@ -53,8 +52,58 @@
 
         </header>
         <main>
-            <div  class="container-fluid d-flex flex-column align-items-center text-center vh-100 ">
-                
+
+            <div  class="container-fluid d-flex flex-column align-items-center">
+
+                <div class="container my-5">
+                    <div class="header">
+                        <h2 class="text-center fst-italic fs-1 text-white">Créer un compte</h2>
+                    </div>
+
+                    <form action="#" method="post" autocomplete="off" class="bg-white" id="form">
+                        <div class="form-control">
+                            <label for="username">Nom d'utilisateur</label>
+                            <input type="text" name="username" id="username" placeholder="Jhon">
+                            <i class="fa-solid fa-exclamation"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="jhon@gmail.com">
+                            <i class="fa-solid fa-exclamation"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+
+                        <div class="form-control">
+                            <div class="d-flex justify-content-between align-items-center ">
+                                <div class="mdp">
+                                    <label for="password">Mot de passe</label>
+                                    <i class="fa-solid fa-question"></i>
+                                    <p>
+                                        Au moins un chiffre, un caractère spécial ( !@#$%^&* ),lettres minuscules et majuscules et  la longueur du mot de passe doit être comprise entre 8 et 12 caractères.
+                                    </p>
+                                </div>
+                                <!-- <i class="fa-solid fa-eye"></i> -->
+                                <i class="fa-solid fa-eye-slash"></i>
+                            </div>
+                            <input type="password" name="password" id="password">
+                            <i class="fa-solid fa-exclamation"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="password2">Confirmation du mot de passe</label>
+                            <input type="password" id="password2">
+                            <i class="fa-solid fa-exclamation"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+
+                        <button type="submit"><i class="fa-solid fa-user-plus"></i> S'inscrire</button>
+                    </form>
+
+                </div>
+
             </div>
 
         </main>
@@ -94,7 +143,8 @@
                 </li>
         </ul>
         </footer>
-        <!-- Bootstrap JavaScript Libraries -->
+        <!-- Bootstrap JavaScript Libraries -->    
+
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -109,7 +159,10 @@
 
         <!-- lien vers JS -->
 
-        <script src="assets/js/contact.js"></script>
+        <script src="https://kit.fontawesome.com/648821c97a.js" crossorigin="anonymous"></script>
+
+
+        <script src="assets/js/Inscription.js"></script>
         
     </body>
 </html>
