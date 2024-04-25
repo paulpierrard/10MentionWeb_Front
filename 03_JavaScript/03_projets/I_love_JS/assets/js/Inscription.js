@@ -41,6 +41,7 @@ let form = document.querySelector('form');
 let username = document.querySelector('#username');
 let email = document.querySelector('#email');
 let password2 = document.querySelector('#password2');
+let message = "";
 
 form.addEventListener('submit', (event)=>{
 
@@ -54,17 +55,58 @@ function formVerif(){
     let userValue = username.value.trim();
     let emailValue = email.value.trim();
     let passwordValue = password.value.trim();
-    let password2 = password2.value.trim();
+    let password2Value = password2.value.trim();
 
-    console.log(userValue.length);
-    if (userValue.length < 2) {
+    // console.log(userValue.length);
+    // if (userValue.length < 2) {
 
-        console.log("ok");
+    //     console.log("ok");
         
-    } else {
+    // } else {
 
-        console.log(userValue.length);
+    //     console.log(userValue.length);
 
+    // }
+
+
+    //user name verify
+
+    if (userValue == "") {// verifie si le champ username est vide 
+
+        message = 'username ne peut pas être vide';
+        setError(username, message);
+        
+    }
+    if (emailValue == "") {// verifie si le champ username est vide 
+
+        message = 'email ne peut pas être vide';
+        setError(email, message);
+        
+    }
+    if (passwordValue == "") {// verifie si le champ username est vide 
+
+        message = 'password ne peut pas être vide';
+        setError(password, message);
+        
+    }
+    if (password2Value == "") {// verifie si le champ username est vide 
+
+        message = 'password confirm ne peut pas être vide';
+        setError(password2, message);
+        
     }
 
 }
+function setError(element, infos) {
+
+    let formControl = element.parentElement; /* La propriété `parentElement` renvoie l'élément parent de l'élément
+    spécifié dans le DOM (Document Object Model). Dans l'extrait de code
+    fourni, « element.parentElement » est utilisé pour accéder à l'élément
+    parent de « element » qui contient le message d'erreur. Ceci est
+    couramment utilisé pour parcourir la hiérarchie DOM et manipuler des
+    éléments en fonction de leurs éléments parents. */
+    let small = formControl.querySelector('small');
+    small.innerText = infos;
+    
+}
+
